@@ -80,7 +80,7 @@ export const ArticleParamsForm = ({
 							<Separator />
 							<RadioGroup
 								title='Размер шрифта'
-								name='font-size'
+								name='radio'
 								selected={formState.fontSizeOption}
 								options={fontSizeOptions}
 								onChange={(fontSizeOption) =>
@@ -115,9 +115,8 @@ export const ArticleParamsForm = ({
 								}
 							/>
 							<Separator />
-							<RadioGroup
+							<Select
 								title='Ширина контента'
-								name='content-width'
 								selected={formState.contentWidth}
 								options={contentWidthArr}
 								onChange={(contentWidth) =>
